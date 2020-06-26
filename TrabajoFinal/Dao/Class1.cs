@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace Dao
 {
     public class Class1
-    {
+    { 
     }
 }
