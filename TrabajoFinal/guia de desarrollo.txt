@@ -1,0 +1,23 @@
+1)hay que hacer que funcionen los hyperlinks de todas las barras de navegacion.
+2)agregar los lbl a las partes de cuenta.
+3)nombrar los elementos los lbl de la cuenta , las listas , etc.
+4)ir copiando funciones del tp de tamara.
+5)completar el modulo home con algunos ejemplos de productos o alguna presentacion.
+6)crear una base de datos para poder ir probando los modulos de la pagina.
+7)dejar funcionando el modulo de creacion de cuentas.
+7.b(desde la base de datos insertar una cuenta con nivel de administrador).
+8)dejar funcionando el modulo de agregar articulo desde administrador. ¿o no dar la opcion de agregar desde administrador?
+9)dejar funcionando la posibilidad de que la cuenta administrador pueda ver los presupuestos solicitados. 
+10)crear la base de datos minimamente funcional.
+11)permitir eliminar los productos desde el panel de administrador. 
+12)revisar que el apartado de cuentas registre el nombre del usuario y el nivel de cuenta en los lbl.
+13)crear carrito de compras para cuando se ingresa una cuenta de tipo clientes y pueda ver los productos previamente seleccionados en "productos".
+14)crear algun lema o algo para agregar a todos los pies de pagina.
+15)crear alguna publicidad para completar en los marcos en los que dice "publicidad"
+16)permitir que se vean los productos en el apartado productos.
+16.b)permitir agregar al carrito si se esta logueado como "usuario"
+17)permitir que se vean las franquicias en el apartado.
+18)permitir que el el modulo "admin productos" se vean todos los productos en la base de datos y permita darlos de baja en caso de no querer venderlo mas.
+19)permitir que en el modulo "admin ventas" se vean todas las ventas registradas en la base de datos.
+20)crear variables de tipo session para que sepamos que tipo de usuario esta navegando.
+21)cookies para recordar usuario y contraseña al momento de ingresar.
