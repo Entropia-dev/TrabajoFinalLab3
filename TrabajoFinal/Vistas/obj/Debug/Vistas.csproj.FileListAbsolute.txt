@@ -57,3 +57,7 @@ D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.csproj.CopyComplete
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.dll
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Entidades.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Negocio.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Entidades.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Negocio.pdb

@@ -24,6 +24,16 @@ namespace Entidades
             this.dia = nuevo_dia;
         }
 
+        public void set_id_cuenta(string nueva_id)
+        {
+            this.id_cuenta = nueva_id;
+        }
+
+        public string get_id_cuenta()
+        {
+            return this.id_cuenta;
+        }
+
         public int get_dia()
         {
             return this.dia;
@@ -58,16 +68,6 @@ namespace Entidades
             return this.importe;
         }
 
-        public void set_id_cuenta(string nuevo_id_cuenta)
-        {
-            this.importe = nuevo_id_cuenta;
-        }
-
-        public string get_id_cuenta()
-        {
-            return this.id_cuenta;
-        }
-
         public void set_nro_venta(int nuevo_nro)
         {
             this.nro_venta = nuevo_nro;
@@ -78,7 +78,7 @@ namespace Entidades
             return this.nro_venta;
         }
 
-        public bool set_estado (bool nuevo_estado)
+        public void set_estado (bool nuevo_estado)
         {
             this.estado = nuevo_estado;
         }

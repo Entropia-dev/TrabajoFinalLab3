@@ -1,0 +1,9 @@
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csprojAssemblyReference.cache
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Dao.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Dao.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Entidades.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Entidades.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csproj.CopyComplete
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.pdb
