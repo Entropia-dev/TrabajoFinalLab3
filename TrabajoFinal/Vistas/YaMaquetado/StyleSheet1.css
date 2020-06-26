@@ -1,0 +1,54 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+#Contenedor {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background:#ffffff;
+}
+
+header h1{
+    height: 150px;
+}
+
+nav{
+    height:60px;
+
+}
+
+nav h2{
+    font-size:30px;
+    text-align:center;
+}
+
+#contenido{
+    width:700px;
+    height:500px;
+    float:left;
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+#contenido h2{
+
+}
+
+aside{
+width:270px;
+height:500px;
+margin-top:10px;
+float:right;
+}
+
+footer{
+    clear:both;
+}
