@@ -21,4 +21,6 @@
 19)permitir que en el modulo "admin ventas" se vean todas las ventas registradas en la base de datos.
 20)crear variables de tipo session para que sepamos que tipo de usuario esta navegando.
 21)cookies para recordar usuario y contraseña al momento de ingresar.
+edev
+
 la puta madre
