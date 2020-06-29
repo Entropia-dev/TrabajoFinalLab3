@@ -16,6 +16,9 @@
             text-align: left;
             margin-left: 160px;
         }
+        .auto-style3 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -32,10 +35,10 @@
         <nav>
             <h2 class="auto-style2">
                 <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-&nbsp;<asp:HyperLink ID="HyperLink1" runat="server">Clientes</asp:HyperLink>
-&nbsp;<asp:HyperLink ID="HyperLink2" runat="server">Franquicias</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/YaMaquetado/Clientes.aspx">Clientes</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/YaMaquetado/Franquisias.aspx">Franquicias</asp:HyperLink>
 &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/login.aspx.cs">Cuenta</asp:HyperLink>
-&nbsp;<asp:HyperLink ID="HyperLink4" runat="server">Productos</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/YaMaquetado/Productos.aspx">Productos</asp:HyperLink>
 &nbsp;</h2>
         </nav>
 
@@ -84,7 +87,7 @@
         </aside>
 
         <footer>
-            <h2>Pie Pagina</h2>
+            <h2 class="auto-style3">Diseñamos para que puedas disfrutar</h2>
         </footer>
 
     </div>

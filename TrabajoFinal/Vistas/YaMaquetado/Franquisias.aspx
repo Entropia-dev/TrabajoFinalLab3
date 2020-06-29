@@ -4,7 +4,7 @@
 
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+   <title>Franquicias</title>
     <style type="text/css">
 *{
     margin: 0px;
@@ -57,7 +57,7 @@ footer{
 
     <link href="StyleSheet1.css" rel="stylesheet" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Home</title>
+  
     <style type="text/css">
 
         .auto-style1 {
@@ -83,15 +83,15 @@ footer{
     <form id="form2" runat="server">
         <div id="Contenedor">
             <header>
-                <h1 class="auto-style1">&nb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos</h1>
+                <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos</h1>
             </header>
             <nav class="auto-style4">
                 <h2 class="auto-style2">
                     <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-                    &nbsp;<asp:HyperLink ID="HyperLink1" runat="server">Clientes</asp:HyperLink>
-                    &nbsp;<asp:HyperLink ID="HyperLink2" runat="server">Franquicias</asp:HyperLink>
+                    &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/YaMaquetado/Clientes.aspx">Clientes</asp:HyperLink>
+                    &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/YaMaquetado/Franquisias.aspx">Franquicias</asp:HyperLink>
                     &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/login.aspx.cs">Cuenta</asp:HyperLink>
-                    &nbsp;<asp:HyperLink ID="HyperLink4" runat="server">Productos</asp:HyperLink>
+                    &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/YaMaquetado/Productos.aspx">Productos</asp:HyperLink>
                     &nbsp;</h2>
             </nav>
             <section id="contenido" class="auto-style3">
@@ -118,10 +118,8 @@ footer{
                 </article>
             </section>
             <aside>
-                <h2>Publicidad2>
-                <p>
-                    ------</p>
-                <p>
+                <h2>Publicidad</h2>
+                    <p>
                     ------</p>
                 <p>
                     ------</p>
