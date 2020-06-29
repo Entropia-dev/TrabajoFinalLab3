@@ -7,3 +7,12 @@ D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\En
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csproj.CopyComplete
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.dll
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.pdb
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Dao.dll
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Dao.pdb
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\bin\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csprojAssemblyReference.cache
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.csproj.CopyComplete
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.dll
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Dao\obj\Debug\Dao.pdb

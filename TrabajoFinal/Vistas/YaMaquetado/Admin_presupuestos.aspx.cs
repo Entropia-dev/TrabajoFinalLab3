@@ -14,6 +14,8 @@ namespace Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Presupuestos pre = new Presupuestos();
+            NegocioProducto np = new NegocioProducto();
         }
     }
 }
