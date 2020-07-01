@@ -24,6 +24,10 @@
             text-align: justify;
             margin-left: 80px;
         }
+        .auto-style6 {
+            text-align: justify;
+            margin-left: 320px;
+        }
     </style>
 </head>
 
@@ -50,7 +54,9 @@
         <section id="contenido">
             <article>
                 <h2 class="auto-style4">Registre su cuenta aqui</h2>
-                <p class="auto-style4">&nbsp;</p>
+                <p class="auto-style6">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
+                </p>
                 <p class="auto-style4">Nombre:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </p>
                 <p class="auto-style4">Apellido<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
@@ -74,7 +80,8 @@
                 </p>
                 <p class="auto-style4">&nbsp;</p>
                 <p class="auto-style5">
-                    <asp:Button ID="Button1" runat="server" Text="Registrarse" />
+                    <asp:Button ID="Button1" runat="server" Text="Registrarse" OnClick="Button1_Click" />
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </p>
             </article>
         </section>
