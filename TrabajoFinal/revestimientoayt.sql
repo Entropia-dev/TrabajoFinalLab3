@@ -7,6 +7,7 @@ GO
 USE  Revestimientoayt
 GO
 
+
  CREATE TABLE Clientes (
 Correo_Cli  VARCHAR (20) NOT NULL,
 Nombre char(12) NOT NULL,
@@ -23,7 +24,7 @@ CONSTRAINT PK_Clientes PRIMARY KEY  (Dni)
   
   )
   
-CREATE TABLE Cuentas(
+create TABLE Cuentas(
 
 Correo VARCHAR (20) NOT NULL,
 Pass_Cue CHAR(8)NOT NULL,
@@ -48,8 +49,8 @@ CONSTRAINT FK_Cuentas_clientes foreign KEY  (Dni) references  Clientes (dni)
 Total  DECIMAL(8,2) DEFAULT '0,00',
  Alias char(8) NOT NULL,
 Fecha  smalldatetime  default getdate(),
-   CONSTRAINT PK_Ventas PRIMARY KEY  (Num_Doc_Com)
-   CONSTRAINT FK_Ventas_clientes foreign KEY  (Dni) references  Clientes (dni)
+   CONSTRAINT PK_Ventas PRIMARY KEY  (Num_Doc_Com),
+
 
     )
    
@@ -77,7 +78,7 @@ Cantidad char(8) NOT NULL,
  Contacto char(8) NOT NULL,
  Direccion char(8) NOT NULL,
  cbu char(8) NOT NULL,
-    CONSTRAINT PK_Proveedores PRIMARY KEY  (  Cuit_Pro)
+    CONSTRAINT PK_Proveedores PRIMARY KEY  ( Cuit_Pro)
     )
     
     
@@ -98,5 +99,6 @@ Cantidad char(8) NOT NULL,
  
   Cod_Art_Det char(8) NOT NULL,
 
-  CONSTRAINT PK_Detalle PRIMARY KEY  ( Cod_Art_Det,Num_Doc_Det)
+  CONSTRAINT PK_Detalle_compra PRIMARY KEY  ( Cod_Art_Det,Num_Doc_Det)
     )
+    
