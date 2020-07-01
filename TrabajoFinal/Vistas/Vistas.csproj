@@ -67,6 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="YaMaquetado\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YaMaquetado\admin_ventas.aspx.cs">
       <DependentUpon>admin_ventas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +168,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="YaMaquetado\Registro.aspx" />
     <Content Include="YaMaquetado\admin_ventas.aspx" />
     <Content Include="YaMaquetado\Admin_presupuestos.aspx" />
     <Content Include="YaMaquetado\admin_Productos.aspx" />
