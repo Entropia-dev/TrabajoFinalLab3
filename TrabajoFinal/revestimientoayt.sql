@@ -1,5 +1,6 @@
 
-
+--delete
+drop database Revestimientoayt
 create database Revestimientoayt
 
 GO 
@@ -45,7 +46,7 @@ CONSTRAINT FK_Cuentas_clientes foreign KEY  (Dni) references  Clientes (dni)
 
   
    CREATE TABLE Ventas (
-  Num_Doc_Com char(8) NOT NULL,
+  Num_Doc_Com  int IDENTITY (1,1) NOT NULL,
 Total  DECIMAL(8,2) DEFAULT '0,00',
  Alias char(8) NOT NULL,
 Fecha  smalldatetime  default getdate(),
@@ -56,11 +57,10 @@ Fecha  smalldatetime  default getdate(),
    
   
  create table Detalle (
-  Num_Doc_Det  char(8) not null,
+  Num_Doc_Det int not null,
 Cantidad char(8) NOT NULL,
  PU_Det DECIMAL(8,2) DEFAULT '0,00',
- 
-  Cod_Art_Det char(8) NOT NULL,
+   Cod_Art_Det char(8) NOT NULL,
 
   CONSTRAINT PK_Detalle PRIMARY KEY  ( Cod_Art_Det,Num_Doc_Det)
     )
@@ -70,6 +70,7 @@ Cantidad char(8) NOT NULL,
  PU_Pro DECIMAL(8,2) DEFAULT '0,00',
  Stock int  NOT NULL,
   Categoria char(8) not null,
+  Descripcion varchar(30) not null,
      CONSTRAINT PK_Productos PRIMARY KEY  ( Cod_Art_Pro)
     )
        CREATE TABLE Proveedores (
@@ -83,7 +84,7 @@ Cantidad char(8) NOT NULL,
     
     
        CREATE TABLE Compra  (
-  Cod_compra char(8) NOT NULL,
+  Cod_compra int IDENTITY (1,1) NOT NULL,
 Total  DECIMAL(8,2) DEFAULT '0,00',
  cuit_proveedor char(8) NOT NULL,
 Fecha  smalldatetime  default getdate(),
@@ -93,7 +94,7 @@ Fecha  smalldatetime  default getdate(),
     )
     
      create table Detalle_compra (
-  Num_Doc_Det  char(8) not null,
+  Num_Doc_Det  int NOT NULL,
 Cantidad char(8) NOT NULL,
  PU_Det DECIMAL(8,2) DEFAULT '0,00',
  
