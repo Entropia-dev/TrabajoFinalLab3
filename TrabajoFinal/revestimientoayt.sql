@@ -77,7 +77,7 @@ Cantidad char(8) NOT NULL,
    Cuit_Pro char(8) NOT NULL,
  Razon_Social char(8) NOT NULL,
  Contacto char(8) NOT NULL,
- Direccion char(8) NOT NULL,
+ Direccion VARCHAR (20) NOT NULL,
  cbu char(8) NOT NULL,
     CONSTRAINT PK_Proveedores PRIMARY KEY  ( Cuit_Pro)
     )
