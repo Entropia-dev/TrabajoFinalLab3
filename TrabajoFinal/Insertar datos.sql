@@ -1,7 +1,7 @@
---insertar datos 
+--insertar datos la fecha de nacimiento necesita el formato aaaa-mm-dd hs-mn-ss 
 use Revestimientoayt
 INSERT INTO clientes  (Correo_Cli,Nombre,Apellido,Fecha_Nac,Sexo,Metodo_captacion,Dni,Direccion,Usuario_Cli)
-VALUES('juan@gmail.com','juan','Meza','4/5/1998','Hombre','a','40333333','avenida123','juan5'),('rocio@gmail.com','rocio','chavez','24/7/1999','mujer','b','42222222','calle13','rocioch')
+VALUES('juan@gmail.com','juan','Meza','1955-12-13 00:00:00','Hombre','a','40333333','avenida123','juan5'),('rocio@gmail.com','rocio','chavez','1955-12-13 12:43:00','mujer','b','42222222','calle13','rocioch')
 GO
 
 INSERT INTO cuentas (Correo,Pass_Cue,Dni,Alias,CP_Cue,Nivel_cuenta)
