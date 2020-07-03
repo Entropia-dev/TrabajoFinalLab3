@@ -28,9 +28,9 @@ CONSTRAINT PK_Clientes PRIMARY KEY  (Dni)
 create TABLE Cuentas(
 
 Correo VARCHAR (20) NOT NULL,
-Pass_Cue CHAR(8)NOT NULL,
+Pass_Cue VARCHAR(20)NOT NULL,
 Dni CHAR (8) NOT NULL,
-Alias CHAR(8)NOT NULL,
+Alias CHAR(20)NOT NULL,
 CP_Cue CHAR(8)NOT NULL,
 Nivel_cuenta  bit ,--boleano
 
@@ -102,4 +102,114 @@ Cantidad char(8) NOT NULL,
 
   CONSTRAINT PK_Detalle_compra PRIMARY KEY  ( Cod_Art_Det,Num_Doc_Det)
     )
-    
+ go;
+
+CREATE PROCEDURE spinsertarprod
+(
+@PU_Pro Decimal,
+@Cod_art_pro decimal,
+@stock int,
+@categoria char(30),
+@descripcion varchar(30)
+)
+AS
+INSERT INTO Productos
+(
+PU_Pro,
+Cod_Art_Pro,
+Stock,
+Categoria,
+Descripcion
+)
+VALUES
+(
+@PU_Pro,
+@Cod_art_pro,
+@stock,
+@categoria,
+@descripcion
+)RETURNgoCREATE PROCEDURE spinsertarcuenta
+(
+@correo VARCHAR(20),
+@pass_cue VARCHAR(20),
+@dni CHAR(8),
+@cp_cue char(8),
+@nivel_cue bit
+)
+AS
+INSERT INTO Cuentas
+(
+Correo,
+Pass_Cue,
+Dni,
+CP_Cue,
+Nivel_cuenta
+)
+VALUES
+(
+@correo,
+@pass_cue,
+@dni,
+@pass_cue,
+@nivel_cue
+)RETURNgoCREATE PROCEDURE spinsertarcuenta
+(
+@correo VARCHAR(20),
+@pass_cue VARCHAR(20),
+@dni CHAR(8),
+@cp_cue char(8),
+@nivel_cue bit
+)
+AS
+INSERT INTO Cuentas
+(
+Correo,
+Pass_Cue,
+Dni,
+CP_Cue,
+Nivel_cuenta
+)
+VALUES
+(
+@correo,
+@pass_cue,
+@dni,
+@pass_cue,
+@nivel_cue
+)RETURNgoCREATE PROCEDURE spinsertarcliente
+(
+@correo_cli VARCHAR(20),
+@nombre VARCHAR(20),
+@apellido CHAR(8),
+@fecha_nac char(8),
+@sexo char,
+@metodo_cap varchar(20),
+@Dni CHAR(8),
+@Direccion VARCHAR (20) NOT NULL,
+@Usuario_Cli CHAR(8)NOT NULL
+)
+AS
+INSERT INTO Clientes
+(
+Correo_Cli,
+Nombre,
+Apellido,
+Fecha_Nac,
+Sexo,
+Metodo_captacion,
+Dni,
+Direccion,
+Usuario_Cli
+)
+VALUES
+(
+@correo_cli,
+@nombre,
+@apellido,
+@fecha_nac,
+@sexo,
+@metodo_cap,
+@Dni,
+@Direccion,
+@Usuario_Cli
+)RETURNgo

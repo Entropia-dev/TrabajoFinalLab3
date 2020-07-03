@@ -3,11 +3,12 @@ use Revestimientoayt
 INSERT INTO clientes  (Correo_Cli,Nombre,Apellido,Fecha_Nac,Sexo,Metodo_captacion,Dni,Direccion,Usuario_Cli)
 VALUES('juan@gmail.com','juan','Meza','1955-12-13 00:00:00','Hombre','a','40333333','avenida123','juan5'),('rocio@gmail.com','rocio','chavez','1955-12-13 12:43:00','mujer','b','42222222','calle13','rocioch')
 GO
-
+--los clientes tienen que existir previamente a la cuenta
 INSERT INTO cuentas (Correo,Pass_Cue,Dni,Alias,CP_Cue,Nivel_cuenta)
 VALUES('juan@gmail.com','pass1','40333333','juan5','cp01',1),('rocio@gmail.com','pass2','42222222','rocioch','cp02',0)
 go
 
+--las ventas tienen que existir previamente al detalle 
 INSERT INTO ventas (Total,Alias)
 VALUES(10000,'juan5'),(9000,'rocioch')
 GO
@@ -26,6 +27,8 @@ VALUES(100000,'prov22'),(90000,'prov14')
 GO
 INSERT INTO Detalle_compra(Num_Doc_Det,Cantidad,PU_Det,Cod_Art_Det)
 VALUES(1,125,800,'plac2'),(2,80,1125,'pint02')
+
+--consultas de seleccion
 
 select* from clientes
 select* from Cuentas
