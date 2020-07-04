@@ -20,3 +20,14 @@ C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Negocio\o
 C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.dll
 C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Negocio.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Dao.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Entidades.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Dao.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Negocio\obj\Debug\Negocio.pdb
