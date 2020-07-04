@@ -101,8 +101,21 @@ Cantidad char(8) NOT NULL,
   Cod_Art_Det char(8) NOT NULL,
 
   CONSTRAINT PK_Detalle_compra PRIMARY KEY  ( Cod_Art_Det,Num_Doc_Det)
+  )
+   create table Franquicias(
+   
+     Id_Sucursal char(8)not null,
+      NombreSucursal  varchar (30) not null,
+      DescripcionSucursal varchar (30) not null,
+      HorarioSucursal varchar(50) not null,
+      ProvinciaSucursal varchar (30) not null,
+      DireccionSucursal varchar (30) not null,
+      
     )
- go;
+ go
+ 
+ 
+ ;
 
 CREATE PROCEDURE spinsertarprod
 (
