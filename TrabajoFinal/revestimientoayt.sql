@@ -147,7 +147,7 @@ VALUES
 @pass_cue VARCHAR(20),
 @dni CHAR(8),
 @cp_cue char(8),
-@nivel_cue bit
+@Alias char(8),
 )
 AS
 INSERT INTO Cuentas
