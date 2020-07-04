@@ -28,6 +28,10 @@ GO
 INSERT INTO Detalle_compra(Num_Doc_Det,Cantidad,PU_Det,Cod_Art_Det)
 VALUES(1,125,800,'plac2'),(2,80,1125,'pint02')
 
+
+INSERT INTO Franquicias(Id_Sucursal,NombreSucursal,DescripcionSucursal,HorarioSucursal,ProvinciaSucursal,DireccionSucursal)
+VALUES('suc04','Revestimiento a&t(Talar) ','Venta de placas pinturas y accesorios antihumedad','8:00 a 17:00 hs','Buenos aires ','hipolito yrigoyen 1623'),
+('suc05','Revestimiento a&t(Benavidez) ','Venta de placas pinturas y accesorios antihumedad','8:00 a 17:00 hs','Buenos aires ','Chilavert 69')
 --consultas de seleccion
 
 select* from clientes

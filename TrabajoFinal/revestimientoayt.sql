@@ -105,12 +105,12 @@ Cantidad char(8) NOT NULL,
    create table Franquicias(
    
      Id_Sucursal char(8)not null,
-      NombreSucursal  varchar (30) not null,
-      DescripcionSucursal varchar (30) not null,
+      NombreSucursal  varchar (50) not null,
+      DescripcionSucursal varchar (50) not null,
       HorarioSucursal varchar(50) not null,
-      ProvinciaSucursal varchar (30) not null,
-      DireccionSucursal varchar (30) not null,
-      
+      ProvinciaSucursal varchar (50) not null,
+      DireccionSucursal varchar (50) not null,
+      CONSTRAINT PK_Franquicia PRIMARY KEY  ( Id_Sucursal) 
     )
  go
  
