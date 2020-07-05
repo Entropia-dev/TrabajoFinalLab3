@@ -11,7 +11,10 @@ namespace Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Alias"] != null)
+            {
+                lblmensaje.Text = Session["Alias"].ToString();
+            }
         }
     }
 }

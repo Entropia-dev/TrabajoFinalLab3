@@ -37,5 +37,26 @@ namespace Negocio
                 return false;
 
         }
+
+        public bool validarCuenta(string cuenta ,string contrasenia) {
+            DaoCuenta dao = new DaoCuenta();
+            Cuentas Cue = new Cuentas();
+            Cue.set_Alias(cuenta);
+            Cue.set_contrasenia(contrasenia);
+            if (dao.existeCuenta(Cue) == false)
+            {
+
+                return false;
+            }
+            else if (Cue.get_contrasenia() != contrasenia)
+            {
+
+                return false;
+           }
+            else {
+                return true;
+            }
+
+        }
     }
 }

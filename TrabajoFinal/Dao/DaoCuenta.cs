@@ -29,7 +29,7 @@ namespace Dao
 
             public Boolean existeCuenta(Cuentas pro)
             {
-                String consulta = "Select * from Cuentas where Correo ='" + pro.get_email_cuenta() + "'";
+                String consulta = "Select * from Cuentas where Alias ='" + pro.get_Alias() + "'";
                 return ds.existe(consulta);
             }
 

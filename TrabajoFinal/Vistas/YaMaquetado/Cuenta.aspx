@@ -55,7 +55,9 @@
             <article>
                 <h2>Usted a ingresado como:</h2>
                 <p>&nbsp;</p>
-                <p>nombre de usuario:</p>
+                <p>
+                    <asp:Label ID="lblmensaje" runat="server"></asp:Label>
+                </p>
                 <p>&nbsp;</p>
                 <p>Nivel de cuenta:</p>
                 <p>&nbsp;</p>

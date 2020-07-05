@@ -55,15 +55,16 @@
             <article>
                 <h2>Ingrese su cuenta aqui:</h2>
                 <p>&nbsp;</p>
-                <p>Nombre de usuario:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <p>Nombre de usuario:<asp:TextBox ID="txtAlias" runat="server"></asp:TextBox>
                 </p>
                 <p>&nbsp;</p>
-                <p>Contraseña:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <p>Contraseña:<asp:TextBox ID="txtContrasenia" runat="server"></asp:TextBox>
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button1" runat="server" Text="Ingresar" Width="221px" OnClick="Button1_Click" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" Width="221px" OnClick="Button1_Click" />
+&nbsp;<asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" Text="Cree su cuenta aqui" OnClick="Button2_Click" />
                 </p>
             </article>

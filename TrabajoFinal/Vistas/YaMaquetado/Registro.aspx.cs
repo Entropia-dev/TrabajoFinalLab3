@@ -28,6 +28,9 @@ namespace Vistas
             if (estado2 == true && estado==true )
             {
                 lblMensaje.Text = "completado con exito";
+                Session["Alias"] = txtAlias;
+
+                Response.Redirect("Cuenta.aspx");
             }
             else
             {
