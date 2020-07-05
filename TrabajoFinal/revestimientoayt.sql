@@ -31,8 +31,8 @@ Correo VARCHAR (20) NOT NULL,
 Pass_Cue VARCHAR(20)NOT NULL,
 Dni CHAR (8) NOT NULL,
 Alias CHAR(20)NOT NULL,
-CP_Cue CHAR(8)NOT NULL,
-Nivel_cuenta  bit ,--boleano
+CP_Cue CHAR(8),
+Nivel_cuenta  int ,
 
 CONSTRAINT PK_Cuentas PRIMARY KEY  (Correo),
 
@@ -156,7 +156,7 @@ Correo,
 Pass_Cue,
 Dni,
 CP_Cue,
-Nivel_cuenta
+Alias
 )
 VALUES
 (

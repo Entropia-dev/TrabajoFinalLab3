@@ -62,7 +62,7 @@
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button1" runat="server" Text="Ingresar" Width="221px" />
+                    <asp:Button ID="Button1" runat="server" Text="Ingresar" Width="221px" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" Text="Cree su cuenta aqui" OnClick="Button2_Click" />
                 </p>

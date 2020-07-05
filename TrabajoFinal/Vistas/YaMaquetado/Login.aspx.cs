@@ -23,5 +23,10 @@ namespace TrabajoIntegradorLab3
         {
             Response.Redirect("Registro.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cuenta.aspx");
+        }
     }
 }

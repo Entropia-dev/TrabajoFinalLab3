@@ -10,17 +10,37 @@ namespace Entidades
     {
         //escribo todos los campos que va a tener la entidad.
 
-        string id; //completado
+      
         string correo_electronico; //completado
         string contrasenia;//completado
         int nivel; //completado
-
+        string Dni;//completado
+        string  Alias;//completado
         //declaro un constructor vacio.
 
         public Cuentas() { }
 
         // declaro los sets y los gets.
 
+
+        public String get_Alias()
+        {
+            return Alias;
+        }
+
+        public void set_Alias(String Nuevo_Alias)
+        {
+            this.Alias = Nuevo_Alias;
+        }
+        public String get_Dni()
+        {
+            return Dni;
+        }
+
+        public void set_Dni(String Nuevo_Dni)
+        {
+            this.Dni = Nuevo_Dni;
+        }
         public int get_nivel_cuenta() {
             return nivel;
         }
@@ -30,15 +50,9 @@ namespace Entidades
             this.nivel = nuevo_nivel_cuenta;
         }
 
-        public string get_id_cuenta()
-        {
-            return id;
-        }
+       
 
-        public void set_id_cuenta(string nuevo_id)
-        {
-            this.id = nuevo_id;
-        }
+      
 
         public void set_email_cuenta(string nuevo_email)
         {
