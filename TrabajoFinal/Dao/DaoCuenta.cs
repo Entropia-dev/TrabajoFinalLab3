@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace Dao
 {
-    class DaoCuenta
+    public class DaoCuenta
     {
 
             AccesoDatos ds = new AccesoDatos();
@@ -20,8 +20,9 @@ namespace Dao
                 //pro.set_codigo_producto(Convert.ToInt32(tabla.Rows[0][0].ToString()));
                 cue.set_email_cuenta(tabla.Rows[0][1].ToString());
                 cue.set_contrasenia(tabla.Rows[0][2].ToString());
-            cue.set_nivel_cuenta(Convert.ToInt32(tabla.Rows[0][3].ToString()));
-            
+            cue.set_Dni(tabla.Rows[0][3].ToString());
+            cue.set_Alias(tabla.Rows[0][4].ToString());
+
 
             return cue;
             }
@@ -52,8 +53,8 @@ namespace Dao
 
                        // pro.get_email_cuenta(ds.ObtenerMaximo("SELECT max(idProducto) FROM Producto") + 1);
                         SqlCommand comando = new SqlCommand();
-                        ArmarParametrosProductoAgregar(ref comando, pro);
-                        return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarCuentas");
+                        ArmarParametrosCuentasAgregar(ref comando, pro);
+                        return ds.EjecutarProcedimientoAlmacenado(comando, "spinsertarcuenta");
                     }
                     
             private void ArmarParametrosCuentasEliminar(ref SqlCommand Comando, Cuentas pro)
@@ -63,17 +64,18 @@ namespace Dao
                 SqlParametros.Value = pro.get_email_cuenta();
             }
 
-            private void ArmarParametrosProductoAgregar(ref SqlCommand Comando, Cuentas pro)
+            private void ArmarParametrosCuentasAgregar(ref SqlCommand Comando, Cuentas pro)
             {
                 SqlParameter SqlParametros = new SqlParameter();
-                SqlParametros = Comando.Parameters.Add("@correo", SqlDbType.Int);
+                SqlParametros = Comando.Parameters.Add("@correo", SqlDbType.VarChar);
                 SqlParametros.Value = pro.get_email_cuenta();
                 SqlParametros = Comando.Parameters.Add("@pass_cue", SqlDbType.VarChar);
                 SqlParametros.Value = pro.get_contrasenia();
-            SqlParametros = Comando.Parameters.Add("@Alias", SqlDbType.VarChar);
-            SqlParametros.Value = pro.get_Alias();
             SqlParametros = Comando.Parameters.Add("@dni ", SqlDbType.VarChar);
             SqlParametros.Value = pro.get_Dni();
+            SqlParametros = Comando.Parameters.Add("@Alias", SqlDbType.VarChar);
+            SqlParametros.Value = pro.get_Alias();
+        
          
        }
 

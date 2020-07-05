@@ -42,11 +42,11 @@ namespace Dao
             return ds.EjecutarProcedimientoAlmacenado(comando, "spEliminarProducto");
         }
 
-/*
-        public int agregarProducto(Productos pro)
+
+        /*public int agregarProducto(Productos pro)
         {
 
-            pro.set_codigo_producto(ds.ObtenerMaximo("SELECT max(idProducto) FROM Producto") + 1);
+            //pro.set_codigo_producto(ds.ObtenerMaximo("SELECT max(idProducto) FROM Producto") + 1);
             SqlCommand comando = new SqlCommand();
             ArmarParametrosProductoAgregar(ref comando, pro);
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarProducto");

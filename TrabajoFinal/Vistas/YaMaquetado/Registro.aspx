@@ -55,8 +55,7 @@
             <article>
                 <h2 class="auto-style4">Registre su cuenta aqui</h2>
                 <p class="auto-style6">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
-                </p>
+                    &nbsp;</p>
                 <p class="auto-style4">Nombre:<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
                 </p>
                 <p class="auto-style4">Apellido<asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>

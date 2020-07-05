@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using Entidades;
 
 namespace Dao
 {
     class AccesoDatos
     {
-        String rutaBDAyti =
-       "Data Source=localhost//sqlexpress;Initial Catalog = AYTI; Integrated Security = True";
+        String rutaBDAyti = @"Data Source=DESKTOP-N8HRG8P\SQLEXPRESS;Initial Catalog=Revestimientoayt;Integrated Security=True";
+       //"Data Source=localhost//sqlexpress;Initial Catalog = AYTI; Integrated Security = True";
         public AccesoDatos()
         {
             // TODO: Agregar aquí la lógica del constructor
@@ -58,7 +59,7 @@ namespace Dao
 
         public int EjecutarProcedimientoAlmacenado(SqlCommand Comando, String NombreSP)
         {
-            int FilasCambiadas;
+            int FilasCambiadas ;
             SqlConnection Conexion = ObtenerConexion();
             SqlCommand cmd = new SqlCommand();
             cmd = Comando;

@@ -13,7 +13,6 @@ namespace Entidades
       
         string correo_electronico; //completado
         string contrasenia;//completado
-        int nivel; //completado
         string Dni;//completado
         string  Alias;//completado
         //declaro un constructor vacio.
@@ -41,14 +40,7 @@ namespace Entidades
         {
             this.Dni = Nuevo_Dni;
         }
-        public int get_nivel_cuenta() {
-            return nivel;
-        }
-        
-        public void set_nivel_cuenta(int nuevo_nivel_cuenta)
-        {
-            this.nivel = nuevo_nivel_cuenta;
-        }
+
 
        
 
