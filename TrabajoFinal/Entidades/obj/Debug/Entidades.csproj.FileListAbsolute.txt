@@ -4,3 +4,9 @@ D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\De
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
 D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb

@@ -187,3 +187,5 @@ C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.csp
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.csproj.CopyComplete
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.dll
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.pdb
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.dll
+C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.pdb
