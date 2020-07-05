@@ -57,31 +57,31 @@
                 <p class="auto-style6">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                 </p>
-                <p class="auto-style4">Nombre:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <p class="auto-style4">Nombre:<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Apellido<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <p class="auto-style4">Apellido<asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Genero:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <p class="auto-style4">Genero:<asp:TextBox ID="txtGenero" runat="server"></asp:TextBox>
                 </p>
                 <p class="auto-style4">Como nos conocio:<asp:DropDownList ID="DropDownList1" runat="server">
                     </asp:DropDownList>
                 </p>
-                <p class="auto-style4">Ingrese un alias para su cuenta:<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <p class="auto-style4">Ingrese un alias para su cuenta:<asp:TextBox ID="txtAlias" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Ingrese su dni:<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                <p class="auto-style4">Ingrese su dni:<asp:TextBox ID="txtDni" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Correo electronico:<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                <p class="auto-style4">Correo electronico:<asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Direccion:<asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                <p class="auto-style4">Direccion:<asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Contraseña:<asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                <p class="auto-style4">Contraseña:<asp:TextBox ID="txtContraseña" runat="server"></asp:TextBox>
                 </p>
-                <p class="auto-style4">Repita su contrasña<asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                <p class="auto-style4">Repita su contrasña<asp:TextBox ID="txtRepContraseña" runat="server"></asp:TextBox>
                 </p>
                 <p class="auto-style4">&nbsp;</p>
                 <p class="auto-style5">
-                    <asp:Button ID="Button1" runat="server" Text="Registrarse" OnClick="Button1_Click" />
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Button ID="btnRegistrarse" runat="server" Text="Registrarse" OnClick="Button1_Click" />
+                    <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                 </p>
             </article>
         </section>
