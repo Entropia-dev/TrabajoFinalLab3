@@ -58,8 +58,9 @@
                 <h2>Presupuestos solicitados:</h2>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:ListView ID="ListView1" runat="server">
+                    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
                     </asp:ListView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                 </p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>

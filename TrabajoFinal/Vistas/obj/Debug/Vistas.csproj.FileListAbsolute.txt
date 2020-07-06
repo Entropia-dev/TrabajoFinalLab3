@@ -189,3 +189,5 @@ C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.dll
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\obj\Debug\Vistas.pdb
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.dll
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.pdb
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.dll
+D:\TPFINALENGITHUB\Tp_Final_Lab_3\TrabajoFinalLab3\TrabajoFinal\Vistas\bin\Dao.pdb

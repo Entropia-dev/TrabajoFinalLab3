@@ -97,10 +97,11 @@ footer{
             <section id="contenido" class="auto-style3">
                 <article>
                     <h2>Nuestras sucursales:</h2>
-                    <asp:DataList ID="DataList1" runat="server">
-                    </asp:DataList>
                     <p>
-                        &nbsp;</p>
+                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                        </asp:ListView>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Franquicias]"></asp:SqlDataSource>
+                    </p>
                     <p>
                         &nbsp;</p>
                     <p>

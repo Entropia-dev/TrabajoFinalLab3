@@ -54,28 +54,11 @@
         <section id="contenido">
             <article>
                 <h2>Trabajan con nosotros:</h2>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
-                <p>------</p>
+                <p>&nbsp;</p>
             </article>
         </section>
-
         <aside class="auto-style4">
-           <h2 class="auto-style5">Nuevos productos</h2>
+            <h2 class="auto-style5">Nuevos productos</h2>
             <p class="auto-style5">&nbsp;</p>
             <p class="auto-style7">Vea todos nuestros mas nuevos productos en Nuestro apartado de </p>
             <p class="auto-style7">

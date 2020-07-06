@@ -56,7 +56,11 @@
         <section id="contenido">
             <article>
                 <h2>Nuestros productos:</h2>
-                <p>&nbsp;</p>
+                <p>
+                    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                    </asp:ListView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Productos]"></asp:SqlDataSource>
+                </p>
             </article>
         </section>
         <aside class="auto-style4">
