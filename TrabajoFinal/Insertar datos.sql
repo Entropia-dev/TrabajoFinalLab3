@@ -17,8 +17,17 @@ VALUES(1,10,1000,'plac2'),(2,3,3000,'pint02')
 GO
 
 
-INSERT INTO Productos (Cod_Art_Pro,PU_Pro,Stock,Descripcion,Categoria)
-VALUES('plac2',1000,200,'placa60x15negro0.63 m2','placa'),('pint',3000,200,'pintura blanca 20L','pintura')
+INSERT INTO Productos (Cod_Art_Pro,PU_Pro,Stock,Descripcion,Categoria,Url_imagen)
+VALUES('cie2',1000,200,'cielorrasox15blanco.o63m2','cielorraso','~/Vistas/Imagenes/cielorrasos.jpg'),
+('Pin2',3000,200,'pinturablanca20litros','pintura','~/Vistas/Imagenes//Pintura blanca.jpg'),
+('Pin3',3000,200,'pintturanegra20litros','pintura','~/Vistas/Imagenes/Pintura negra.jpg'),
+('plac2',1000,200,'placax15piedra.063m2','placa','~/Vistas/Imagenes/modelo piedra.jpg'),
+('plac3',1000,200,'placax15adoquin.063m2','placa','~/Vistas/Imagenes/placa adoquin.jpg'),
+('plac4',1000,200,'placax15Marmol.063m2','placa','~/Vistas/Imagenes/placa Marmol.jpg'),
+('plac5',1000,200,'placax15murete .063m2','placa','~/Vistas/Imagenes/placa murete .jpg'),
+('plac6',1000,200,'placax15ubeda .063m2','placa','~/Vistas/Imagenes/placa ubeda.jpg'),
+('plac7',1000,200,'placax15blancas.063m2','placa','~/Vistas/Imagenes/placas blancas.jpg'),
+('plac8',1000,200,'placax15blancas.063m2','placa','~/Vistas/Imagenes/placas blancas.jpg')
 INSERT INTO Proveedores (Cuit_Pro,Razon_Social,Contacto,Direccion,cbu)
 VALUES('prov22','EASY','RAMON','LOSANDES 69','222222'),('prov14','ALBA','ROMINA','BELGRANO 2O20','333333')
 
