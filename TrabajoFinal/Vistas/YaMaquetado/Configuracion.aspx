@@ -84,7 +84,9 @@ footer{
     <form id="form2" runat="server">
         <div id="Contenedor">
             <header>
-                <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos</h1>
+                <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos
+                    <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                </h1>
             </header>
             <nav class="auto-style4">
                 <h2 class="auto-style2">
@@ -113,7 +115,7 @@ footer{
                     <p>
                         &nbsp;</p>
                     <p>
-                        <asp:Button ID="Button1" runat="server" Text="actualizar contraseña" Width="197px" />
+                        <asp:Button ID="Button1" runat="server" Text="actualizar contraseña" Width="197px" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="Button2" runat="server" Text="Salir de mi cuenta" Width="203px" />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

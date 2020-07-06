@@ -38,7 +38,9 @@
     <div id="Contenedor" class="auto-style3">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos&nbsp;
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </h1>
         </header>
 
         <nav>
@@ -56,7 +58,7 @@
                 <h2>Necesita un presupuesto ?</h2>
                 <p>Complete sus datos para obtener atencion personalizada.</p>
                 <p>&nbsp;</p>
-                <p>Nombre:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <p>Nombre:<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 </p>
                 <p>&nbsp;</p>
                 <p>Telefono:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>

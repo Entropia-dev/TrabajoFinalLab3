@@ -16,6 +16,16 @@ namespace Vistas
         {
             Presupuestos pre = new Presupuestos();
             NegocioProducto np = new NegocioProducto();
+            if (Session["Alias"] != null)
+            {
+                HyperLink3.NavigateUrl = "~/YaMaquetado/Cuenta.aspx";
+                lblMensaje.Text = Session["Alias"].ToString();
+            }
+        }
+
+        protected void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

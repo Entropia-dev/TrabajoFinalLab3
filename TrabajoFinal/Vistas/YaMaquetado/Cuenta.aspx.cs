@@ -13,8 +13,14 @@ namespace Vistas
         {
             if (Session["Alias"] != null)
             {
+                HyperLink3.NavigateUrl = "~/YaMaquetado/Cuenta.aspx";
                 lblmensaje.Text = Session["Alias"].ToString();
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

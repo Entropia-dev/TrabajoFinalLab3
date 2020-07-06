@@ -40,7 +40,9 @@
     <div id="Contenedor" class="auto-style3">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos&nbsp;
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </h1>
         </header>
 
         <nav>
@@ -58,7 +60,7 @@
                 <h2>Presupuestos solicitados:</h2>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                     </asp:ListView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                 </p>

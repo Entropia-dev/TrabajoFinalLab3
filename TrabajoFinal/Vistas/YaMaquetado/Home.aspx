@@ -29,7 +29,9 @@
     <div id="Contenedor">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </h1>
         </header>
 
         <nav>

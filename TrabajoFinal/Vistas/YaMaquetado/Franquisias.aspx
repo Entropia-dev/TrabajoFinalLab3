@@ -83,7 +83,9 @@ footer{
     <form id="form2" runat="server">
         <div id="Contenedor">
             <header>
-                <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos</h1>
+                <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&amp;TI Revestimientos
+                    <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                </h1>
             </header>
             <nav class="auto-style4">
                 <h2 class="auto-style2">
@@ -98,7 +100,7 @@ footer{
                 <article>
                     <h2>Nuestras sucursales:</h2>
                     <p>
-                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                        <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                             <AlternatingItemTemplate>
                                 <li style="background-color: #FFF8DC;">NombreSucursal:
                                     <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />

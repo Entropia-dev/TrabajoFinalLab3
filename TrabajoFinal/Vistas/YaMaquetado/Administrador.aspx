@@ -38,7 +38,9 @@
     <div id="Contenedor" class="auto-style3">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos&nbsp;
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </h1>
         </header>
 
         <nav>
@@ -60,7 +62,7 @@
                 <p>Nivel de cuenta:</p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" />
+                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
                 </p>
                 <p>&nbsp;</p>
                 <p>

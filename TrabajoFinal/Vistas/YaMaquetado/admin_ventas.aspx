@@ -38,7 +38,9 @@
     <div id="Contenedor" class="auto-style3">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos&nbsp;
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </h1>
         </header>
 
         <nav>
@@ -55,7 +57,7 @@
             <article>
                 <h2>Nuestras ventas fueron:</h2>
                 <p>
-                    <asp:ListView ID="ListView1" runat="server" DataSourceID="Conector_ventas" DataKeyNames="Num_Doc_Com">
+                    <asp:ListView ID="ListView1" runat="server" DataSourceID="Conector_ventas" DataKeyNames="Num_Doc_Com" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                         <AlternatingItemTemplate>
                             <tr style="background-color: #FFFFFF;color: #284775;">
                                 <td>

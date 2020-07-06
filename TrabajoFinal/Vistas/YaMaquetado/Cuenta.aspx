@@ -62,7 +62,7 @@
                 <p>Nivel de cuenta:</p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" />
+                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
                 </p>
                 <p>&nbsp;</p>
                 <p>
