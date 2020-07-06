@@ -99,8 +99,111 @@ footer{
                     <h2>Nuestras sucursales:</h2>
                     <p>
                         <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                            <AlternatingItemTemplate>
+                                <li style="background-color: #FFF8DC;">NombreSucursal:
+                                    <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
+                                    <br />
+                                    DescripcionSucursal:
+                                    <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
+                                    <br />
+                                    HorarioSucursal:
+                                    <asp:Label ID="HorarioSucursalLabel" runat="server" Text='<%# Eval("HorarioSucursal") %>' />
+                                    <br />
+                                    DireccionSucursal:
+                                    <asp:Label ID="DireccionSucursalLabel" runat="server" Text='<%# Eval("DireccionSucursal") %>' />
+                                    <br />
+                                    ProvinciaSucursal:
+                                    <asp:Label ID="ProvinciaSucursalLabel" runat="server" Text='<%# Eval("ProvinciaSucursal") %>' />
+                                    <br />
+                                </li>
+                            </AlternatingItemTemplate>
+                            <EditItemTemplate>
+                                <li style="background-color: #008A8C;color: #FFFFFF;">NombreSucursal:
+                                    <asp:TextBox ID="NombreSucursalTextBox" runat="server" Text='<%# Bind("NombreSucursal") %>' />
+                                    <br />
+                                    DescripcionSucursal:
+                                    <asp:TextBox ID="DescripcionSucursalTextBox" runat="server" Text='<%# Bind("DescripcionSucursal") %>' />
+                                    <br />
+                                    HorarioSucursal:
+                                    <asp:TextBox ID="HorarioSucursalTextBox" runat="server" Text='<%# Bind("HorarioSucursal") %>' />
+                                    <br />
+                                    DireccionSucursal:
+                                    <asp:TextBox ID="DireccionSucursalTextBox" runat="server" Text='<%# Bind("DireccionSucursal") %>' />
+                                    <br />
+                                    ProvinciaSucursal:
+                                    <asp:TextBox ID="ProvinciaSucursalTextBox" runat="server" Text='<%# Bind("ProvinciaSucursal") %>' />
+                                    <br />
+                                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Actualizar" />
+                                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancelar" />
+                                </li>
+                            </EditItemTemplate>
+                            <EmptyDataTemplate>
+                                No se han devuelto datos.
+                            </EmptyDataTemplate>
+                            <InsertItemTemplate>
+                                <li style="">NombreSucursal:
+                                    <asp:TextBox ID="NombreSucursalTextBox" runat="server" Text='<%# Bind("NombreSucursal") %>' />
+                                    <br />DescripcionSucursal:
+                                    <asp:TextBox ID="DescripcionSucursalTextBox" runat="server" Text='<%# Bind("DescripcionSucursal") %>' />
+                                    <br />HorarioSucursal:
+                                    <asp:TextBox ID="HorarioSucursalTextBox" runat="server" Text='<%# Bind("HorarioSucursal") %>' />
+                                    <br />DireccionSucursal:
+                                    <asp:TextBox ID="DireccionSucursalTextBox" runat="server" Text='<%# Bind("DireccionSucursal") %>' />
+                                    <br />ProvinciaSucursal:
+                                    <asp:TextBox ID="ProvinciaSucursalTextBox" runat="server" Text='<%# Bind("ProvinciaSucursal") %>' />
+                                    <br />
+                                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insertar" />
+                                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Borrar" />
+                                </li>
+                            </InsertItemTemplate>
+                            <ItemSeparatorTemplate>
+<br />
+                            </ItemSeparatorTemplate>
+                            <ItemTemplate>
+                                <li style="background-color: #DCDCDC;color: #000000;">NombreSucursal:
+                                    <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
+                                    <br />
+                                    DescripcionSucursal:
+                                    <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
+                                    <br />
+                                    HorarioSucursal:
+                                    <asp:Label ID="HorarioSucursalLabel" runat="server" Text='<%# Eval("HorarioSucursal") %>' />
+                                    <br />
+                                    DireccionSucursal:
+                                    <asp:Label ID="DireccionSucursalLabel" runat="server" Text='<%# Eval("DireccionSucursal") %>' />
+                                    <br />
+                                    ProvinciaSucursal:
+                                    <asp:Label ID="ProvinciaSucursalLabel" runat="server" Text='<%# Eval("ProvinciaSucursal") %>' />
+                                    <br />
+                                </li>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <ul id="itemPlaceholderContainer" runat="server" style="font-family: Verdana, Arial, Helvetica, sans-serif;">
+                                    <li runat="server" id="itemPlaceholder" />
+                                </ul>
+                                <div style="text-align: center;background-color: #CCCCCC;font-family: Verdana, Arial, Helvetica, sans-serif;color: #000000;">
+                                </div>
+                            </LayoutTemplate>
+                            <SelectedItemTemplate>
+                                <li style="background-color: #008A8C;font-weight: bold;color: #FFFFFF;">NombreSucursal:
+                                    <asp:Label ID="NombreSucursalLabel" runat="server" Text='<%# Eval("NombreSucursal") %>' />
+                                    <br />
+                                    DescripcionSucursal:
+                                    <asp:Label ID="DescripcionSucursalLabel" runat="server" Text='<%# Eval("DescripcionSucursal") %>' />
+                                    <br />
+                                    HorarioSucursal:
+                                    <asp:Label ID="HorarioSucursalLabel" runat="server" Text='<%# Eval("HorarioSucursal") %>' />
+                                    <br />
+                                    DireccionSucursal:
+                                    <asp:Label ID="DireccionSucursalLabel" runat="server" Text='<%# Eval("DireccionSucursal") %>' />
+                                    <br />
+                                    ProvinciaSucursal:
+                                    <asp:Label ID="ProvinciaSucursalLabel" runat="server" Text='<%# Eval("ProvinciaSucursal") %>' />
+                                    <br />
+                                </li>
+                            </SelectedItemTemplate>
                         </asp:ListView>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Franquicias]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [NombreSucursal], [DescripcionSucursal], [HorarioSucursal], [DireccionSucursal], [ProvinciaSucursal] FROM [Franquicias]"></asp:SqlDataSource>
                     </p>
                     <p>
                         &nbsp;</p>

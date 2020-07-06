@@ -15,7 +15,7 @@ namespace Vistas
         NegocioCuenta neg2 = new NegocioCuenta();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace Vistas
             if (estado2 == true && estado==true )
             {
                 lblMensaje.Text = "completado con exito";
-                Session["Alias"] = txtAlias;
+                Session["Alias"] = txtAlias.Text;
 
                 Response.Redirect("Cuenta.aspx");
             }
