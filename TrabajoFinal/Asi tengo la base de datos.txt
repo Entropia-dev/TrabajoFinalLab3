@@ -69,6 +69,7 @@ Cantidad char(8) NOT NULL,
    Cod_Art_Pro char(8) NOT NULL,
  PU_Pro DECIMAL(8,2) DEFAULT '0,00',
  Stock int  NOT NULL,
+Url_imagen varchar(100)NOT NULL,
   Categoria char(8) not null,
   Descripcion varchar(30) not null,
      CONSTRAINT PK_Productos PRIMARY KEY  ( Cod_Art_Pro)
