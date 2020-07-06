@@ -69,9 +69,9 @@ Cantidad char(8) NOT NULL,
    Cod_Art_Pro char(8) NOT NULL,
  PU_Pro DECIMAL(8,2) DEFAULT '0,00',
  Stock int  NOT NULL,
-Url_imagen varchar(100)NOT NULL,
-  Categoria char(8) not null,
-  Descripcion varchar(30) not null,
+  Categoria char(8),
+  Descripcion varchar(30) ,
+  Url_imagen varchar(100) 
      CONSTRAINT PK_Productos PRIMARY KEY  ( Cod_Art_Pro)
     )
        CREATE TABLE Proveedores (
@@ -124,7 +124,8 @@ CREATE PROCEDURE spinsertarprod
 @Cod_art_pro decimal,
 @stock int,
 @categoria char(30),
-@descripcion varchar(30)
+@descripcion varchar(30),
+@Url_imagen varchar (100)
 )
 AS
 INSERT INTO Productos
@@ -133,7 +134,8 @@ PU_Pro,
 Cod_Art_Pro,
 Stock,
 Categoria,
-Descripcion
+Descripcion,
+ Url_imagen
 )
 VALUES
 (
@@ -141,7 +143,8 @@ VALUES
 @Cod_art_pro,
 @stock,
 @categoria,
-@descripcion
+@descripcion,
+  @Url_imagen
 )RETURN
 go
 --No paso variable cap por que no esta en las funciones de get y set
