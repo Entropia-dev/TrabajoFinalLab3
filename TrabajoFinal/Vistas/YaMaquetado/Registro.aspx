@@ -65,7 +65,10 @@
                 <p class="auto-style4">Genero:<asp:TextBox ID="txtGenero" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtGenero" ErrorMessage="Complete su genero"></asp:RequiredFieldValidator>
                 </p>
-                <p class="auto-style4">Como nos conocio:<asp:DropDownList ID="DropDownList1" runat="server">
+                <p class="auto-style4">Como nos conocio:<asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:ListItem>Amigos</asp:ListItem>
+                    <asp:ListItem>Publicidad</asp:ListItem>
+                    <asp:ListItem></asp:ListItem>
                     </asp:DropDownList>
                 </p>
                 <p class="auto-style4">Ingrese un alias para su cuenta:<asp:TextBox ID="txtAlias" runat="server"></asp:TextBox>

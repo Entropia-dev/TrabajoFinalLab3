@@ -37,5 +37,10 @@ namespace Vistas
                 lblMensaje.Text = "No se pudo agregar ";
             }
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
