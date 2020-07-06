@@ -98,7 +98,7 @@
         </section>
 
         <aside>
-            <h2>Publicidad</h2>
+            <h2>Nuevas placas</h2>
             <p>&nbsp;</p>
             <span style="color: rgb(68, 68, 68); font-family: Nunito, sans-serif, google; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Las Placas Antihumedad Hidroseco son un revestimiento Antihumedad que absorbe la humedad y la microevapora de forma gradual e imperceptible, impide la formación de hongos y salitre transformando los ambientes en un espacio seco y muy saludable. Nuestros revestimientos unen el buen gusto y la solución permanente a problemas de humedad con garantía de 10 años. Son la solución definitiva a la humedad de cimientos, humedad ascendente o humedad por capilaridad.</span></aside>
 

@@ -222,39 +222,12 @@ footer{
                 </article>
             </section>
             <aside>
-                <h2>Publicidad</h2>
-                    <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
-                <p>
-                    ------</p>
+          <h2 class="auto-style5">Nuevos productos</h2>
+            <p class="auto-style5">&nbsp;</p>
+            <p class="auto-style7">Vea todos nuestros mas nuevos productos en Nuestro apartado de </p>
+            <p class="auto-style7">
+                <asp:HyperLink ID="Productos_2" runat="server" NavigateUrl="~/Productos.aspx">Productos</asp:HyperLink>
+                .</p>
             </aside>
         </div>
     </form>
