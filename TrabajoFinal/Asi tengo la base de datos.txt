@@ -203,3 +203,15 @@ VALUES
 @Usuario_Cli
 )RETURN
 go
+
+create procedure spmodificarcuenta 
+(
+@pass_cue CHAR(8),
+@Alias char(8)
+)
+AS
+update Cuentas
+ Set Pass_Cue =@pass_cue
+ where  Cuentas.Alias=@Alias
+
+RETURN
