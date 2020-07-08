@@ -37,24 +37,46 @@ namespace Negocio
                 return false;
 
         }
+        public bool ModificarContraseña(string alias, string contraseña, string nueva)
+        {
+            int cant_flias = 0;
+            Cuentas Cue = new Cuentas();
+            DaoCuenta dao = new DaoCuenta();
 
-        public bool validarCuenta(string cuenta ,string contrasenia) {
+            Cue.set_contrasenia(nueva);
+
+            Cue.set_Alias(alias);
+
+            if (dao.existeCuenta(Cue) == true)
+            {
+                cant_flias = dao.modificarCuenta(Cue);
+            }
+            if (cant_flias == 1)
+            {
+                return true;
+            }
+            else
+                return false;
+
+        }
+
+        public bool validarCuenta(string cuenta, string contrasenia)
+        {
             DaoCuenta dao = new DaoCuenta();
             Cuentas Cue = new Cuentas();
             Cue.set_Alias(cuenta);
             Cue.set_contrasenia(contrasenia);
-            if (dao.existeCuenta(Cue) == false)
+            if (dao.existeCuenta(Cue) == true)
             {
-
+                if (dao.existeContraseña(Cue) == true)
+                {
+                    return true;
+                }
                 return false;
             }
-            else if (Cue.get_contrasenia() != contrasenia)
+            else
             {
-
                 return false;
-           }
-            else {
-                return true;
             }
 
         }

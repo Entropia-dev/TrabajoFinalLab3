@@ -58,13 +58,14 @@
             <article>
                 <h2>Modifique su contraseña.</h2>
                 <p>&nbsp;</p>
-                <p>Ingrese su correo electronico:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <p>Ingrese su&nbsp; Alias:<asp:TextBox ID="txtAlias" runat="server"></asp:TextBox>
                 </p>
                 <p>&nbsp;</p>
-                <p>Ingrese su contraseña actual:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <p>Ingrese su contraseña actual:<asp:TextBox ID="TxtContraseña" runat="server"></asp:TextBox>
+                    <asp:Label ID="lblMensaje2" runat="server"></asp:Label>
                 </p>
                 <p>&nbsp;</p>
-                <p>confirme su cotraseña:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <p>confirme su cotraseña:<asp:TextBox ID="txtNueva" runat="server"></asp:TextBox>
                 </p>
                 <p>&nbsp;</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
