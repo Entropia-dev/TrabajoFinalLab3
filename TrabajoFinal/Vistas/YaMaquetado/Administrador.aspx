@@ -67,15 +67,15 @@
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button1" runat="server" Height="35px" Text="Ver todos los productos" Width="247px" />
+                    <asp:Button ID="Button1" runat="server" Height="35px" Text="Ver todos los productos" Width="247px" OnClick="Button1_Click" />
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver  todos los presupuestos" Width="251px" />
+                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver  todos los presupuestos" Width="251px" OnClick="Button3_Click" />
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" />
+                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" OnClick="Button4_Click" />
                 </p>
             </article>
         </section>

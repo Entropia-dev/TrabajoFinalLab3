@@ -13,7 +13,7 @@ namespace Vistas
         {
             if (Session["Alias"] != null)
             {
-                HyperLink3.NavigateUrl = "~/YaMaquetado/Cuenta.aspx";
+                HyperLink3.NavigateUrl = "~/YaMaquetado/Administrador.aspx";
                 lblMensaje.Text = Session["Alias"].ToString();
                 lblTipo.Text = " Bienvenido admin ";
             }
@@ -21,7 +21,23 @@ namespace Vistas
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            Response.Redirect("ModificarContraseña.aspx");
+        }
 
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Session["Alias"] = null;
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin_presupuestos.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin_Productos.aspx");
         }
     }
 }
