@@ -59,6 +59,15 @@
             <article>
                 <h2>Nuestros productos:</h2>
                 <p>
+                    &nbsp;</p>
+                <p>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;<asp:Button ID="Button2" runat="server" Text="Button" />
+                </p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;
                     <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1" GroupItemCount="2" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                        <%-- <AlternatingItemTemplate>
                             <td runat="server" style="background-color: #FFFFFF;color: #284775;">PU_Pro:
@@ -127,6 +136,9 @@
                                 <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
                                 <br />Descripcion:
                                 <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
+                                <br />
+                                <asp:Button ID="Button1" runat="server" Text="Agregar carrito" CommandArgument='<%# Eval("PU_Pro")+"-"+Eval("Categoria")+"-"+Eval("Descripcion")  %>'
+                            CommandName="eventoClick"  OnCommand="Button1_Command" />
                                 <br /></td>
                         </ItemTemplate>
                         <LayoutTemplate>
@@ -161,10 +173,127 @@
                                 <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
                                 <br />Descripcion:
                                 <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
+                                <br />
+                                
                                 <br /></td>
                         </SelectedItemTemplate>
                     </asp:ListView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [PU_Pro], [Categoria], [Url_imagen], [Descripcion] FROM [Productos]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [PU_Pro], [Categoria], [Url_imagen], [Descripcion] FROM [Productos] WHERE ([Descripcion] LIKE '%'+@Descripcion+'%')">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="TextBox1" DefaultValue="mi" Name="Descripcion" PropertyName="Text" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
+                </p>
+                <asp:Panel ID="Panel1" runat="server">
+
+                </asp:Panel>
+                <%--<asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2" GroupItemCount="3">
+                    <AlternatingItemTemplate>
+                        <td runat="server" style="background-color: #FFFFFF;color: #284775;">PU_Pro:
+                            <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
+                            <br />Categoria:
+                            <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
+                            <br />Descripcion:
+                            <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
+                            <br />Url_imagen:
+                            <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
+                            <br /></td>
+                    </AlternatingItemTemplate>
+                    <EditItemTemplate>
+                        <td runat="server" style="background-color: #999999;">PU_Pro:
+                            <asp:TextBox ID="PU_ProTextBox" runat="server" Text='<%# Bind("PU_Pro") %>' />
+                            <br />Categoria:
+                            <asp:TextBox ID="CategoriaTextBox" runat="server" Text='<%# Bind("Categoria") %>' />
+                            <br />Descripcion:
+                            <asp:TextBox ID="DescripcionTextBox" runat="server" Text='<%# Bind("Descripcion") %>' />
+                            <br />Url_imagen:
+                            <asp:TextBox ID="Url_imagenTextBox" runat="server" Text='<%# Bind("Url_imagen") %>' />
+                            <br />
+                            <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Actualizar" />
+                            <br />
+                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancelar" />
+                            <br /></td>
+                    </EditItemTemplate>
+                    <EmptyDataTemplate>
+                        <table runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
+                            <tr>
+                                <td>No se han devuelto datos.</td>
+                            </tr>
+                        </table>
+                    </EmptyDataTemplate>
+                    <EmptyItemTemplate>
+<td runat="server" />
+                    </EmptyItemTemplate>
+                    <GroupTemplate>
+                        <tr id="itemPlaceholderContainer" runat="server">
+                            <td id="itemPlaceholder" runat="server"></td>
+                        </tr>
+                    </GroupTemplate>
+                    <InsertItemTemplate>
+                        <td runat="server" style="">PU_Pro:
+                            <asp:TextBox ID="PU_ProTextBox" runat="server" Text='<%# Bind("PU_Pro") %>' />
+                            <br />Categoria:
+                            <asp:TextBox ID="CategoriaTextBox" runat="server" Text='<%# Bind("Categoria") %>' />
+                            <br />Descripcion:
+                            <asp:TextBox ID="DescripcionTextBox" runat="server" Text='<%# Bind("Descripcion") %>' />
+                            <br />Url_imagen:
+                            <asp:TextBox ID="Url_imagenTextBox" runat="server" Text='<%# Bind("Url_imagen") %>' />
+                            <br />
+                            <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insertar" />
+                            <br />
+                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Borrar" />
+                            <br /></td>
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <td runat="server" style="background-color: #E0FFFF;color: #333333;">PU_Pro:
+                            <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
+                            <br />Categoria:
+                            <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
+                            <br />Descripcion:
+                            <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
+                            <br />Url_imagen:
+                            <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
+                            <br />
+                            <asp:Button ID="Button3" runat="server" Text="Agregar carrito" CommandArgument='<%# Eval("PU_Pro")+"-"+Eval("Categoria")+"-"+Eval("Descripcion")  %>'
+                            CommandName="eventoClick"  OnCommand="Button3_Command" />
+                            <br /></td>
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <table runat="server">
+                            <tr runat="server">
+                                <td runat="server">
+                                    <table id="groupPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+                                        <tr id="groupPlaceholder" runat="server">
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr runat="server">
+                                <td runat="server" style="text-align: center;background-color: #5D7B9D;font-family: Verdana, Arial, Helvetica, sans-serif;color: #FFFFFF">
+                                    <asp:DataPager ID="DataPager1" runat="server" PageSize="12">
+                                        <Fields>
+                                            <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                            <asp:NumericPagerField />
+                                            <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                        </Fields>
+                                    </asp:DataPager>
+                                </td>
+                            </tr>
+                        </table>
+                    </LayoutTemplate>
+                    <SelectedItemTemplate>
+                        <td runat="server" style="background-color: #E2DED6;font-weight: bold;color: #333333;">PU_Pro:
+                            <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
+                            <br />Categoria:
+                            <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
+                            <br />Descripcion:
+                            <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
+                            <br />Url_imagen:
+                            <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
+                            <br /></td>
+                    </SelectedItemTemplate>
+                </asp:ListView>--%>
+                <p>
                 </p>
             </article>
         </section>

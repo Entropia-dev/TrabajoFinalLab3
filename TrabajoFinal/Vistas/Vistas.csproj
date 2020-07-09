@@ -68,6 +68,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="YaMaquetado\historial_compra.aspx.cs">
+      <DependentUpon>historial_compra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\historial_compra.aspx.designer.cs">
+      <DependentUpon>historial_compra.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YaMaquetado\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,8 +174,16 @@
       <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YaMaquetado\VerCarrito.aspx.cs">
+      <DependentUpon>VerCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\VerCarrito.aspx.designer.cs">
+      <DependentUpon>VerCarrito.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="YaMaquetado\historial_compra.aspx" />
     <Content Include="YaMaquetado\Registro.aspx" />
     <Content Include="YaMaquetado\admin_ventas.aspx" />
     <Content Include="YaMaquetado\Admin_presupuestos.aspx" />
@@ -187,6 +202,7 @@
     <Content Include="TrabajoIntegradorLab3.csproj.user" />
     <Content Include="TrabajoIntegradorLab3.sln" />
     <Content Include="Web.config" />
+    <Content Include="YaMaquetado\VerCarrito.aspx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

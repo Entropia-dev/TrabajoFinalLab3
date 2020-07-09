@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace TrabajoIntegradorLab3 {
-    
-    
-    public partial class Productos {
-        
+namespace TrabajoIntegradorLab3
+{
+
+
+    public partial class Productos
+    {
+
         /// <summary>
         /// Control form1.
         /// </summary>
@@ -20,7 +22,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// Control lblMensaje.
         /// </summary>
@@ -29,7 +31,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMensaje;
-        
+
         /// <summary>
         /// Control HyperLink5.
         /// </summary>
@@ -38,7 +40,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
-        
+
         /// <summary>
         /// Control HyperLink1.
         /// </summary>
@@ -47,7 +49,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-        
+
         /// <summary>
         /// Control HyperLink2.
         /// </summary>
@@ -56,7 +58,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
-        
+
         /// <summary>
         /// Control HyperLink3.
         /// </summary>
@@ -65,7 +67,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
-        
+
         /// <summary>
         /// Control HyperLink4.
         /// </summary>
@@ -74,7 +76,25 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
-        
+
+        /// <summary>
+        /// Control TextBox1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
+        /// Control Button2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
+
         /// <summary>
         /// Control ListView1.
         /// </summary>
@@ -83,7 +103,7 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView1;
-        
+
         /// <summary>
         /// Control SqlDataSource1.
         /// </summary>
@@ -92,7 +112,16 @@ namespace TrabajoIntegradorLab3 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
+
+        /// <summary>
+        /// Control Panel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+
         /// <summary>
         /// Control Productos_2.
         /// </summary>

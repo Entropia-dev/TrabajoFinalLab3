@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cuenta.aspx.cs" Inherits="Vistas.Cuenta" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="historial_compra.aspx.cs" Inherits="Vistas.YaMaquetado.historial_compra" %>
 
 <!DOCTYPE html>
 
@@ -38,7 +38,7 @@
     <div id="Contenedor" class="auto-style3">
 
         <header>
-            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
+            <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos</h1>
         </header>
 
         <nav>
@@ -46,42 +46,49 @@
                 <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/YaMaquetado/Home.aspx">Home</asp:HyperLink>
 &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/YaMaquetado/Clientes.aspx">Clientes</asp:HyperLink>
 &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/YaMaquetado/Franquisias.aspx">Franquicias</asp:HyperLink>
-&nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/YaMaquetado/Cuenta.aspx">Cuenta</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/YaMaquetado/Login.aspx">Cuenta</asp:HyperLink>
 &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/YaMaquetado/Productos.aspx">Productos</asp:HyperLink>
 &nbsp;</h2>
         </nav>
 
         <section id="contenido">
             <article>
-                <h2>Usted a ingresado como:</h2>
-                <p>&nbsp;</p>
+                <h2>HISTORIAL DE COMPRAS</h2>
                 <p>
+                    &nbsp;</p>
+                <p>
+                    Usuario:
                     <asp:Label ID="lblmensaje" runat="server"></asp:Label>
                 </p>
                 <p>&nbsp;</p>
-                <p>Nivel de cuenta:<asp:Label ID="lblTipo" runat="server"></asp:Label>
-                </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Num_Doc_Com" DataSourceID="SqlDataSource1">
+                        <Columns>
+                            <asp:BoundField DataField="Num_Doc_Com" HeaderText="Num_Doc_Com" InsertVisible="False" ReadOnly="True" SortExpression="Num_Doc_Com" />
+                            <asp:BoundField DataField="Total" HeaderText="Total" SortExpression="Total" />
+                            <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha" />
+                        </Columns>
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT [Num_Doc_Com], [Total], [Fecha] FROM [Ventas] WHERE ([Alias] = @Alias)">
+                        <SelectParameters>
+                            <asp:SessionParameter Name="Alias" SessionField="Alias" Type="String" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                 </p>
                 <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button1" runat="server" Height="35px" Text="Ver Carrito" Width="247px" OnClick="Button1_Click" />
-                </p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver historial de compras" Width="251px" OnClick="Button3_Click" />
-                </p>
-                <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" OnClick="Button4_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" Text="Volver a su cuenta" OnClick="Button2_Click" />
                 </p>
             </article>
         </section>
 
         <aside class="auto-style4">
-           <h2 class="auto-style5">Nuevos productos</h2>
+        <h2 class="auto-style5">&nbsp;Nuevos productos</h2>
             <p class="auto-style5">&nbsp;</p>
             <p class="auto-style7">Vea todos nuestros mas nuevos productos en Nuestro apartado de </p>
             <p class="auto-style7">

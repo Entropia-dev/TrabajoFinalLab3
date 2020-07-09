@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Vistas
+namespace Vistas.YaMaquetado
 {
 
 
-    public partial class Administrador
+    public partial class VerCarrito
     {
 
         /// <summary>
@@ -69,31 +69,22 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
 
         /// <summary>
-        /// Control lblMensaje.
+        /// Control lblmensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensaje;
+        protected global::System.Web.UI.WebControls.Label lblmensaje;
 
         /// <summary>
-        /// Control lblTipo.
+        /// Control GvCarrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTipo;
-
-        /// <summary>
-        /// Control Button2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.GridView GvCarrito;
 
         /// <summary>
         /// Control Button1.
@@ -105,22 +96,13 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// Control Button3.
+        /// Control Button2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
-
-        /// <summary>
-        /// Control Button4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
         /// Control Productos_2.

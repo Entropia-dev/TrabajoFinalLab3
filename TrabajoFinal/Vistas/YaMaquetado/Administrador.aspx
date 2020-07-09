@@ -39,7 +39,7 @@
 
         <header>
             <h1 class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bienvenidos a A&TI Revestimientos&nbsp;
-                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                
             </h1>
         </header>
 
@@ -55,7 +55,7 @@
 
         <section id="contenido">
             <article>
-                <h2>Usted a ingresado como:</h2>
+                <h2>Usted a ingresado como:</h2><asp:Label ID="lblMensaje" runat="server" href="~/YaMaquetado/VerCarrito.aspx"></asp:Label>
                 <p>&nbsp;</p>
                 <p>nombre de usuario:</p>
                 <p>&nbsp;</p>
@@ -71,7 +71,7 @@
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver  todos los presupuestos" Width="251px" OnClick="Button3_Click" />
+                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver  todos los presupuestos" Width="251px" />
                 </p>
                 <p>&nbsp;</p>
                 <p>

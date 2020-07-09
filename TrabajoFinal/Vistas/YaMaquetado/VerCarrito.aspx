@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cuenta.aspx.cs" Inherits="Vistas.Cuenta" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VerCarrito.aspx.cs" Inherits="Vistas.YaMaquetado.VerCarrito" %>
 
 <!DOCTYPE html>
 
@@ -59,24 +59,13 @@
                     <asp:Label ID="lblmensaje" runat="server"></asp:Label>
                 </p>
                 <p>&nbsp;</p>
-                <p>Nivel de cuenta:<asp:Label ID="lblTipo" runat="server"></asp:Label>
-                </p>
+                
                 <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
-                </p>
+                <asp:GridView ID="GvCarrito" runat="server"></asp:GridView>
                 <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button1" runat="server" Height="35px" Text="Ver Carrito" Width="247px" OnClick="Button1_Click" />
-                </p>
+                
                 <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Ver historial de compras" Width="251px" OnClick="Button3_Click" />
-                </p>
-                <p>&nbsp;</p>
-                <p>
-                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" OnClick="Button4_Click" />
-                </p>
+                <asp:Button ID="Button1" runat="server" Text="Comprar" OnClick="Button1_Click" />&nbsp;<asp:Button ID="Button2" runat="server" Text="Limpiar carrito" OnClick="Button2_Click" />
             </article>
         </section>
 

@@ -11,8 +11,8 @@ namespace Dao
 {
     class AccesoDatos
     {
-        String rutaBDAyti = @"Data Source=DESKTOP-N8HRG8P\SQLEXPRESS;Initial Catalog=Revestimientoayt;Integrated Security=True";
-       //"Data Source=localhost//sqlexpress;Initial Catalog = AYTI; Integrated Security = True";
+        // String rutaBDAyti = @"Data Source=DESKTOP-N8HRG8P\SQLEXPRESS;Initial Catalog=Revestimientoayt;Integrated Security=True";
+        String rutaBDAyti = "Data Source=localhost\\SQLEXPRESS;Initial Catalog = Revestimientoayt; Integrated Security = True";
         public AccesoDatos()
         {
             // TODO: Agregar aquí la lógica del constructor

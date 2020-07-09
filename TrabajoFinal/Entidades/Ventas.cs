@@ -12,6 +12,7 @@ namespace Entidades
         int mes; //la fecha tiene que ser remplazada por un datetime  //terminado
         int anio; //terminado 
         decimal importe;  //terminado
+        string alias;
         string id_cuenta;  //terminado
         int nro_venta;  //terminado
         bool estado;  //terminado
@@ -19,6 +20,10 @@ namespace Entidades
         //declaro un contructor vacio
         public Ventas() { }
 
+        public void setAlia(string nuevo)
+        {
+            this.alias = nuevo;
+        }
         public void set_dia(int nuevo_dia)
         {
             this.dia = nuevo_dia;
@@ -37,6 +42,10 @@ namespace Entidades
         public int get_dia()
         {
             return this.dia;
+        }
+        public string getAlias()
+        {
+            return this.alias;
         }
 
         public void set_mes(int nuevo_mes)
