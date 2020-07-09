@@ -102,6 +102,13 @@ namespace Dao
 
 
         }
+        public string Devolver_Tipo_Cuenta(Cuentas pro)
+        {
+
+            String consulta = "Select Nivel_cuenta from Cuentas where Alias ='" + pro.get_Alias() + "'";
+            return ds.tipo_cuenta(consulta);
+
+        }
 
 
 

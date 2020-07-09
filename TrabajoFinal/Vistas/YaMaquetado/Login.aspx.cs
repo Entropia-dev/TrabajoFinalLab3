@@ -35,11 +35,25 @@ namespace TrabajoIntegradorLab3
             if (estado == true)
             {
                 Session["Alias"] = txtAlias.Text;
+                Boolean estadocue = false;
+                estadocue = neg.devolvertipo_cuenta(Session["Alias"].ToString());
+                if (estadocue == true)
+                {
 
 
-                Response.Redirect("Cuenta.aspx");
+                    Response.Redirect("Administrador.aspx");
+                }
+                else
+                {
+
+
+                    Response.Redirect("Cuenta.aspx");
+                }
+
+
             }
-            else { 
+            else
+            {
 
                 lblMensaje.Text = "No se pudo ingresar";
 

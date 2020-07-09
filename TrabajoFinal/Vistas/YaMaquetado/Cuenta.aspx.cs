@@ -4,16 +4,24 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using Entidades;
+using Negocio;
 namespace Vistas
 {
     public partial class Cuenta : System.Web.UI.Page
     {
+        NegocioCuenta neg = new NegocioCuenta();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            lblTipo.Text = " Bienvenido Cliente ";
+
+
             if (Session["Alias"] != null)
             {
                 HyperLink3.NavigateUrl = "~/YaMaquetado/Cuenta.aspx";
+
                 lblmensaje.Text = Session["Alias"].ToString();
             }
         }

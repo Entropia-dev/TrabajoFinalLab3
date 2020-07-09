@@ -59,7 +59,8 @@
                 <p>&nbsp;</p>
                 <p>nombre de usuario:</p>
                 <p>&nbsp;</p>
-                <p>Nivel de cuenta:</p>
+                <p>Nivel de cuenta:<asp:Label ID="lblTipo" runat="server"></asp:Label>
+                </p>
                 <p>&nbsp;</p>
                 <p>
                     <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
@@ -104,3 +105,4 @@
 
 </body>
 </html>
+

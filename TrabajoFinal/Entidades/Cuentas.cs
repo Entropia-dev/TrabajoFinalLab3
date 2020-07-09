@@ -10,18 +10,27 @@ namespace Entidades
     {
         //escribo todos los campos que va a tener la entidad.
 
-      
+
         string correo_electronico; //completado
         string contrasenia;//completado
         string Dni;//completado
-        string  Alias;//completado
+        string Alias;//completado
+        int tipo_usuario;
         //declaro un constructor vacio.
 
         public Cuentas() { }
 
         // declaro los sets y los gets.
 
+        public int get_tipo_usuario()
+        {
+            return tipo_usuario;
+        }
+        public void set_tipo_usuario(int Nuevo_tipo_usuario)
+        {
+            this.tipo_usuario = Nuevo_tipo_usuario;
 
+        }
         public String get_Alias()
         {
             return Alias;
@@ -42,9 +51,9 @@ namespace Entidades
         }
 
 
-       
 
-      
+
+
 
         public void set_email_cuenta(string nuevo_email)
         {
@@ -56,7 +65,8 @@ namespace Entidades
             return correo_electronico;
         }
 
-        public void  set_contrasenia(string nueva_contrasenia) {
+        public void set_contrasenia(string nueva_contrasenia)
+        {
 
             this.contrasenia = nueva_contrasenia;
         }

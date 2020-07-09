@@ -15,6 +15,7 @@ namespace Vistas
             {
                 HyperLink3.NavigateUrl = "~/YaMaquetado/Cuenta.aspx";
                 lblMensaje.Text = Session["Alias"].ToString();
+                lblTipo.Text = " Bienvenido admin ";
             }
         }
 

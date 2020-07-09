@@ -80,5 +80,23 @@ namespace Negocio
             }
 
         }
+        public bool devolvertipo_cuenta(string alias)
+        {
+            DaoCuenta dao = new DaoCuenta();
+            Cuentas Cue = new Cuentas();
+            Cue.set_Alias(alias);
+
+
+
+
+            if (dao.Devolver_Tipo_Cuenta(Cue) == "1")
+            {
+                return true;
+            }
+            else return false;
+
+
+
+        }
     }
 }

@@ -96,6 +96,20 @@ namespace Dao
             }
             return max;
         }
+        public string tipo_cuenta(String consulta)
+        {
+            string estado = "";
+            SqlConnection Conexion = ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(consulta, Conexion);
+            SqlDataReader datos = cmd.ExecuteReader();
+            if (datos.Read())
+            {
+                estado = datos[0].ToString();
+            }
+            return estado;
+        }
+
+
 
     }
 

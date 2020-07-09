@@ -59,7 +59,8 @@
                     <asp:Label ID="lblmensaje" runat="server"></asp:Label>
                 </p>
                 <p>&nbsp;</p>
-                <p>Nivel de cuenta:</p>
+                <p>Nivel de cuenta:<asp:Label ID="lblTipo" runat="server"></asp:Label>
+                </p>
                 <p>&nbsp;</p>
                 <p>
                     <asp:Button ID="Button2" runat="server" Height="35px" Text="Cambiar contraseña" Width="248px" OnClick="Button2_Click" />
@@ -70,11 +71,11 @@
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Solicitar un presupuesto" Width="251px" />
+                    <asp:Button ID="Button3" runat="server" Height="35px" Text="Solicitar un presupuesto" Width="251px" OnClick="Button3_Click" />
                 </p>
                 <p>&nbsp;</p>
                 <p>
-                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" />
+                    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" OnClick="Button4_Click" />
                 </p>
             </article>
         </section>
