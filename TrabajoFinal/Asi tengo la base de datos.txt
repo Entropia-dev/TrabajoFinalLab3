@@ -214,4 +214,65 @@ update Cuentas
  Set Pass_Cue =@pass_cue
  where  Cuentas.Alias=@Alias
 
+
+--Procedimiento acutalizar productos
+
+ create procedure  spActualizarProductos
+(
+@Cod_art_pro char (8),
+@PU_Pro Decimal,
+
+@stock int,
+
+@Url_imagen varchar (100)
+)
+
+AS
+update Productos
+set 
+PU_Pro=@PU_Pro,
+Stock=@stock,
+ Url_imagen=@Url_imagen
+ where  Productos.Cod_Art_Pro=@Cod_art_pro
+
 RETURN
+
+--procedimineto eliminar producto 
+
+ Create procedure  speliminarproc 
+(@Cod_art_pro char(8))
+as
+delete  from  productos  
+where Cod_Art_Pro = @Cod_art_pro
+
+---procedimiento agregar producto
+
+
+create  PROCEDURE spinsertarprod
+(
+@Cod_art_pro char (8),
+@PU_Pro Decimal,
+@stock int,
+@categoria char(30),
+@descripcion varchar(30),
+@Url_imagen varchar (100)
+)
+AS
+INSERT INTO Productos
+(
+PU_Pro,
+Cod_Art_Pro,
+Stock,
+Categoria,
+Descripcion,
+ Url_imagen
+)
+VALUES
+(
+@Cod_art_pro,
+@PU_Pro, 
+@stock ,
+@categoria, 
+@descripcion, 
+@Url_imagen 
+)RETURN
