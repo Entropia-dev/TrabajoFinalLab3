@@ -11,9 +11,28 @@ namespace Entidades
     {
         string codigo_producto; //completado
         string nombre_producto; //completado
+        int stock;
+        string categoria;
         decimal precio_producto; //complteado
         bool estado;    //completado
         string url_imagen;  //completado
+        public void set_categoria(string Nuevo_categoria)
+        {
+            this.categoria = Nuevo_categoria;
+        }
+        public string get_categoria()
+        {
+            return categoria;
+        }
+
+        public void set_Stock(int Nuevo_stock)
+        {
+            this.stock = Nuevo_stock;
+        }
+        public int get_stock()
+        {
+            return stock;
+        }
 
         public Productos()
         {
@@ -60,12 +79,12 @@ namespace Entidades
             return this.estado;
         }
 
-        public void  set_url_imagen(string nueva_url)
+        public void set_url_imagen(string nueva_url)
         {
             this.url_imagen = nueva_url;
         }
 
-        public string get_codigo_imagen()
+        public string get_url_imagen()
         {
             return this.url_imagen;
         }

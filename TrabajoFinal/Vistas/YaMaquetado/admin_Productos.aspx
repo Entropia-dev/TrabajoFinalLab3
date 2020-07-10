@@ -28,6 +28,9 @@
         .auto-style7 {
             text-align: left;
         }
+        .auto-style8 {
+            margin-right: 0px;
+        }
     </style>
 </head>
 
@@ -53,214 +56,117 @@
 
         <section id="contenido">
             <article>
-                <h2>Nuestros productos en venta son:</h2>
+                <h2>Nuestros productos en venta&nbsp;son:</h2>
+                <p>&nbsp;</p>
                 <p>
-                    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Cod_Art_Pro" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
-                        <AlternatingItemTemplate>
-                            <tr style="background-color: #FAFAD2; color: #284775;">
-                                <td>
-                                    <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Eliminar" />
-                                    <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Editar" />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Cod_Art_ProLabel" runat="server" Text='<%# Eval("Cod_Art_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("Stock") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
-                                </td>
-                            </tr>
-                        </AlternatingItemTemplate>
-                        <EditItemTemplate>
-                            <tr style="background-color: #FFCC66; color: #000080;">
-                                <td>
-                                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Actualizar" />
-                                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancelar" />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Cod_Art_ProLabel1" runat="server" Text='<%# Eval("Cod_Art_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="PU_ProTextBox" runat="server" Text='<%# Bind("PU_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="StockTextBox" runat="server" Text='<%# Bind("Stock") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="CategoriaTextBox" runat="server" Text='<%# Bind("Categoria") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="DescripcionTextBox" runat="server" Text='<%# Bind("Descripcion") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="Url_imagenTextBox" runat="server" Text='<%# Bind("Url_imagen") %>' />
-                                </td>
-                            </tr>
-                        </EditItemTemplate>
-                        <EmptyDataTemplate>
-                            <table runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
-                                <tr>
-                                    <td>No se han devuelto datos.</td>
-                                </tr>
-                            </table>
-                        </EmptyDataTemplate>
-                        <InsertItemTemplate>
-                            <tr style="">
-                                <td>
-                                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insertar" />
-                                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Borrar" />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="Cod_Art_ProTextBox" runat="server" Text='<%# Bind("Cod_Art_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="PU_ProTextBox" runat="server" Text='<%# Bind("PU_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="StockTextBox" runat="server" Text='<%# Bind("Stock") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="CategoriaTextBox" runat="server" Text='<%# Bind("Categoria") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="DescripcionTextBox" runat="server" Text='<%# Bind("Descripcion") %>' />
-                                </td>
-                                <td>
-                                    <asp:TextBox ID="Url_imagenTextBox" runat="server" Text='<%# Bind("Url_imagen") %>' />
-                                </td>
-                            </tr>
-                        </InsertItemTemplate>
-                        <ItemTemplate>
-                            <tr style="background-color: #FFFBD6; color: #333333;">
-                                <td>
-                                    <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Eliminar" />
-                                    <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Editar" />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Cod_Art_ProLabel" runat="server" Text='<%# Eval("Cod_Art_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("Stock") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
-                                </td>
-                            </tr>
-                        </ItemTemplate>
-                        <LayoutTemplate>
-                            <table runat="server">
-                                <tr runat="server">
-                                    <td runat="server">
-                                        <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
-                                            <tr runat="server" style="background-color: #FFFBD6; color: #333333;">
-                                                <th runat="server"></th>
-                                                <th runat="server">Cod_Art_Pro</th>
-                                                <th runat="server">PU_Pro</th>
-                                                <th runat="server">Stock</th>
-                                                <th runat="server">Categoria</th>
-                                                <th runat="server">Descripcion</th>
-                                                <th runat="server">Url_imagen</th>
-                                            </tr>
-                                            <tr id="itemPlaceholder" runat="server">
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr runat="server">
-                                    <td runat="server" style="text-align: center;background-color: #FFCC66; font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333">
-                                        <asp:DataPager ID="DataPager1" runat="server">
-                                            <Fields>
-                                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
-                                                <asp:NumericPagerField />
-                                                <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
-                                            </Fields>
-                                        </asp:DataPager>
-                                    </td>
-                                </tr>
-                            </table>
-                        </LayoutTemplate>
-                        <SelectedItemTemplate>
-                            <tr style="background-color: #FFCC66; font-weight: bold;color: #000080;">
-                                <td>
-                                    <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Eliminar" />
-                                    <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Editar" />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Cod_Art_ProLabel" runat="server" Text='<%# Eval("Cod_Art_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="PU_ProLabel" runat="server" Text='<%# Eval("PU_Pro") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="StockLabel" runat="server" Text='<%# Eval("Stock") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="CategoriaLabel" runat="server" Text='<%# Eval("Categoria") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' />
-                                </td>
-                                <td>
-                                    <asp:Label ID="Url_imagenLabel" runat="server" Text='<%# Eval("Url_imagen") %>' />
-                                </td>
-                            </tr>
-                        </SelectedItemTemplate>
-                    </asp:ListView>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Productos]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Productos] WHERE [Cod_Art_Pro] = @original_Cod_Art_Pro AND (([PU_Pro] = @original_PU_Pro) OR ([PU_Pro] IS NULL AND @original_PU_Pro IS NULL)) AND [Stock] = @original_Stock AND (([Categoria] = @original_Categoria) OR ([Categoria] IS NULL AND @original_Categoria IS NULL)) AND (([Descripcion] = @original_Descripcion) OR ([Descripcion] IS NULL AND @original_Descripcion IS NULL)) AND (([Url_imagen] = @original_Url_imagen) OR ([Url_imagen] IS NULL AND @original_Url_imagen IS NULL))" InsertCommand="INSERT INTO [Productos] ([Cod_Art_Pro], [PU_Pro], [Stock], [Categoria], [Descripcion], [Url_imagen]) VALUES (@Cod_Art_Pro, @PU_Pro, @Stock, @Categoria, @Descripcion, @Url_imagen)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [Productos] SET [PU_Pro] = @PU_Pro, [Stock] = @Stock, [Categoria] = @Categoria, [Descripcion] = @Descripcion, [Url_imagen] = @Url_imagen WHERE [Cod_Art_Pro] = @original_Cod_Art_Pro AND (([PU_Pro] = @original_PU_Pro) OR ([PU_Pro] IS NULL AND @original_PU_Pro IS NULL)) AND [Stock] = @original_Stock AND (([Categoria] = @original_Categoria) OR ([Categoria] IS NULL AND @original_Categoria IS NULL)) AND (([Descripcion] = @original_Descripcion) OR ([Descripcion] IS NULL AND @original_Descripcion IS NULL)) AND (([Url_imagen] = @original_Url_imagen) OR ([Url_imagen] IS NULL AND @original_Url_imagen IS NULL))">
-                        <DeleteParameters>
-                            <asp:Parameter Name="original_Cod_Art_Pro" Type="String" />
-                            <asp:Parameter Name="original_PU_Pro" Type="Decimal" />
-                            <asp:Parameter Name="original_Stock" Type="Int32" />
-                            <asp:Parameter Name="original_Categoria" Type="String" />
-                            <asp:Parameter Name="original_Descripcion" Type="String" />
-                            <asp:Parameter Name="original_Url_imagen" Type="String" />
-                        </DeleteParameters>
-                        <InsertParameters>
-                            <asp:Parameter Name="Cod_Art_Pro" Type="String" />
-                            <asp:Parameter Name="PU_Pro" Type="Decimal" />
-                            <asp:Parameter Name="Stock" Type="Int32" />
-                            <asp:Parameter Name="Categoria" Type="String" />
-                            <asp:Parameter Name="Descripcion" Type="String" />
-                            <asp:Parameter Name="Url_imagen" Type="String" />
-                        </InsertParameters>
-                        <UpdateParameters>
-                            <asp:Parameter Name="PU_Pro" Type="Decimal" />
-                            <asp:Parameter Name="Stock" Type="Int32" />
-                            <asp:Parameter Name="Categoria" Type="String" />
-                            <asp:Parameter Name="Descripcion" Type="String" />
-                            <asp:Parameter Name="Url_imagen" Type="String" />
-                            <asp:Parameter Name="original_Cod_Art_Pro" Type="String" />
-                            <asp:Parameter Name="original_PU_Pro" Type="Decimal" />
-                            <asp:Parameter Name="original_Stock" Type="Int32" />
-                            <asp:Parameter Name="original_Categoria" Type="String" />
-                            <asp:Parameter Name="original_Descripcion" Type="String" />
-                            <asp:Parameter Name="original_Url_imagen" Type="String" />
-                        </UpdateParameters>
-                    </asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RevestimientoaytConnectionString %>" SelectCommand="SELECT * FROM [Productos]"></asp:SqlDataSource>
                 </p>
                 <p>&nbsp;</p>
+                <asp:GridView ID="grdProductos" runat="server" AutoGenerateColumns="False" AutoGenerateDeleteButton="True" AutoGenerateEditButton="True" CellPadding="4" GridLines="None" OnSelectedIndexChanged="grdProductos_SelectedIndexChanged" PageSize="3" AllowPaging="True" ForeColor="#333333" OnPageIndexChanging="grdProductos_PageIndexChanging" OnRowCancelingEdit="grdProductos_RowCancelingEdit" OnRowDeleting="grdProductos_RowDeleting" OnRowEditing="grdProductos_RowEditing" OnRowUpdating="grdProductos_RowUpdating" OnSelectedIndexChanging="grdProductos_SelectedIndexChanging" CssClass="auto-style8">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                    <Columns>
+                        <asp:TemplateField HeaderText="Cod_Art_Pro">
+                            <EditItemTemplate>
+                                <asp:Label ID="lblet_Cod_pro" runat="server" Text='<%# Bind("Cod_Art_Pro") %>'></asp:Label>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_Cod_pro" runat="server" Text='<%# Bind("Cod_Art_Pro") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="PU_Pro">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtEi_PU_Pro" runat="server" Text='<%# Bind("PU_Pro") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_pu" runat="server" Text='<%# Bind("PU_Pro") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Stock">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txt_Stock" runat="server" Text='<%# Bind("Stock") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_Stock" runat="server" Text='<%# Bind("Stock") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Categoria">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtet_Categoria" runat="server" Text='<%# Bind("Categoria") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_categoria" runat="server" Text='<%# Bind("Categoria") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Descripcion">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="txtei_Descripcion" runat="server" Text='<%# Bind("Descripcion") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_Descipcion" runat="server" Text='<%# Bind("Descripcion") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText=" Url_imagen">
+                            <EditItemTemplate>
+                                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("Cod_Art_Pro") %>'></asp:TextBox>
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Label ID="lblit_imagen" runat="server" Text='<%# Bind("Url_imagen") %>'></asp:Label>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+
+                    </Columns>
+                    <EditRowStyle BackColor="#999999" />
+                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                    </asp:GridView>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
+                <p>
+                    <asp:Label ID="lblSelecciono" runat="server"></asp:Label>
+                </p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    Agregar productos
+                </p>
+                <p>
+                    codpro<asp:TextBox ID="txtcodpro" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtcodpro" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    precio<asp:TextBox ID="txtprecio" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtprecio" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    Stock<asp:TextBox ID="TxtStock" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtStock" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    categoria
+                    <asp:TextBox ID="txtcategoria" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtcategoria" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    descripcion<asp:TextBox ID="Txtdescripcion" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="Txtdescripcion" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    urlImagen
+                    <asp:TextBox ID="txtImagen" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtImagen" ErrorMessage="*"></asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar producto" />
+                </p>
                 <p>&nbsp;</p>
                 <p>
                     &nbsp;</p>
@@ -268,24 +174,10 @@
                 <p>
                     &nbsp;</p>
                 <p>&nbsp;</p>
-                <p>
-                    &nbsp;</p>
-                <p>&nbsp;</p>
-                <p>
-                    &nbsp;</p>
             </article>
         </section>
 
         <aside class="auto-style4">
-             <h2 class="auto-style5">&nbsp;</h2>
-       
-            <p class="auto-style5">&nbsp;</p>
-            <p class="auto-style7"> </p>
-            <p class="auto-style7">
-                <asp:HyperLink ID="Productos_2" runat="server" NavigateUrl="~/Productos.aspx">Productos</asp:HyperLink>
-                .</p>
-            <p class="auto-style7">&nbsp;</p>
-            <p class="auto-style7">&nbsp;</p>
             <p class="auto-style7">&nbsp;</p>
             <p class="auto-style7">&nbsp;</p>
             <p class="auto-style7">&nbsp;</p>
@@ -293,8 +185,8 @@
         </aside>
 
         <footer>
-            <h2 class="auto-style5"></h2>
-        </footer>
+            <h2 class="auto-style5">Diseñamos para que puedas disfrutar</h2>
+            </footer>
 
     </div>
 
