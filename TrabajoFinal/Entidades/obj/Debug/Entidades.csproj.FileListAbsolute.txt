@@ -10,3 +10,9 @@ C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidad
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
 C:\Users\Aaron\Desktop\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.dll
+C:\Users\Windows 10 Pro\Documents\GitHub\TrabajoFinalLab3\TrabajoFinal\Entidades\obj\Debug\Entidades.pdb
